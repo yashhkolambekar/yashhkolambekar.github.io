@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-1 p{
+    font-size: 25px;
+}
+
+.icons{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+.icons ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons ul li{
+    margin: 0px 1px;
+}
+
+.svg-size{
+    height: 25px;
+    width: 25px;
+}
+
+.g-fill{
+    fill:rgb(150,150,150);
+}
+
+@media (max-width:500px){
+    .container-1 p{
+        font-size: 18px;
+    }
+}
