@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Views</title>
+    <script>
+        function init(){
+        fetch("https://api.countapi.xyz/get/default/ff742b99-d427-449a-b96a-e5f73c49c157")
+    .then(function(response){
+        return (response.json());
+    })
+    .then(function(json){
+        document.getElementById("one").innerHTML = json.value;
+    })
+
+    fetch("https://api.countapi.xyz/get/default/a465a1b1-2266-4145-8e19-bf8a6ae78388")
+    .then(function(response){
+        return (response.json());
+    })
+    .then(function(json){
+        document.getElementById("two").innerHTML = json.value;
+    })
+}
+    </script>
+</head>
+<body onload="init()">
+    <p>Homepage views: <span id='one'></span></p>
+    <p>Win friend downloads: <span id='two'></span></p>
+</body>
+</html>
