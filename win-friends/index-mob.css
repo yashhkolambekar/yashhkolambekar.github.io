@@ -41,5 +41,16 @@
     }
     .free-pdf-btn{
         width:100%;
+        margin-top: 8px;
+    }
+
+    .form{
+        margin-top: 20px;
+    }
+
+    .formName{
+    width: 100%;
+    margin-bottom: 0;
+
     }
 }
